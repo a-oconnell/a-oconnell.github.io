@@ -174,8 +174,8 @@ h1 {
 }
 
 .avatar {
-  width: 140px;
-  height: 140px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 18px;
   align-self: center;
