@@ -1,18 +1,22 @@
-# Amy O'Connell website files
+# Amy O'Connell personal site
 
 ## Files
-- `index.html` — main website
-- `style.css` — site styling
-- `assets/Amy_OConnell_CV.pdf` — your CV PDF
+- `index.html` — site content
+- `style.css` — colors and layout
+- `assets/Amy_OConnell_CV.pdf` — downloadable CV
 
-## Publish to GitHub Pages
+## Suggested edits before publishing
+1. Replace placeholder `#` links with your final project URLs.
+2. Add a headshot to the hero area if you want one.
+3. Update the News section as new items happen.
+4. Add or remove publications as needed.
+
+## GitHub Pages setup
 1. Create a repository named `your-username.github.io`.
-2. Upload these files into the repository root.
-3. In GitHub, open `Settings` → `Pages`.
-4. Under `Build and deployment`, select `Deploy from a branch`.
+2. Upload the files in this folder to the repository root.
+3. Go to **Settings → Pages**.
+4. Set **Deploy from a branch**.
 5. Choose branch `main` and folder `/ (root)`.
 6. Save.
-7. After GitHub finishes building, open `https://your-username.github.io/`.
 
-## Local testing
-Open `index.html` directly in a browser, or serve the folder with a local static server.
+Your site will publish at `https://your-username.github.io/`.
