@@ -7,12 +7,12 @@
   <title>Amy O'Connell</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <div class="container nav-wrap">
+    <div class="container header-inner">
       <a class="brand" href="#home" aria-label="Home">
         <span class="brand-name">Allison (Amy) O'Connell</span>
         <span class="brand-meta">Ph.D. Candidate, Computer Science, USC</span>
@@ -31,73 +31,105 @@
 
   <main class="container" id="home">
     <section class="hero card">
-      <div class="hero-main">
-        <div class="avatar" aria-hidden="true">AO</div>
-        <div>
-          <p class="eyebrow">Human-robot interaction · assistive robotics · open-source platforms</p>
-          <h1>Allison (Amy) O'Connell</h1>
-          <p class="lede">
-            I am a Ph.D. candidate in the Department of Computer Science at the University of Southern California,
-            advised by <a href="https://robotics.usc.edu/~maja/administration.html" target="_blank" rel="noreferrer">Prof. Maja Matarić</a>.
-            My work focuses on modular, low-cost, open-source robots for in-the-wild human-robot interaction studies.
-          </p>
-          <p class="lede">
-            I have contributed to projects including <a href="https://github.com/interaction-lab/OpenHMI" target="_blank" rel="noreferrer">Blossom</a>
-            and the <a href="#nih-project">NIH Smart Health project</a>.
-          </p>
-          <div class="hero-links">
-            <a class="button primary" href="#publications">View publications</a>
-            <a class="button" href="assets/Amy_OConnell_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
-            <a class="button" href="mailto:amy.dell@usc.edu">Email</a>
-          </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Human-robot interaction · assistive robotics · open-source platforms</p>
+        <h1>Robotics, human-robot interaction, and accessible research platforms.</h1>
+        <p class="lede">
+          I am a Ph.D. candidate in the Department of Computer Science at the University of Southern California,
+          advised by <a href="https://viterbi.usc.edu/directory/faculty/Mataric/Maja" target="_blank" rel="noreferrer">Prof. Maja Matarić</a>.
+          My work focuses on modular, low-cost, open-source robots for in-the-wild human-robot interaction studies.
+        </p>
+        <p class="lede">
+          I contribute to <a href="https://rasc.usc.edu/robots/squash-and-stretch/blossom/" target="_blank" rel="noreferrer">Blossom</a>,
+          the <a href="https://datascience.nih.gov/sch" target="_blank" rel="noreferrer">NIH Smart Health</a> project,
+          and AR/VR interfaces for proxemics and robot signal design.
+        </p>
+
+        <div class="hero-links">
+          <a class="button primary" href="#publications">View publications</a>
+          <a class="button" href="assets/Amy_OConnell_CV.pdf" target="_blank" rel="noreferrer">Download CV</a>
+          <a class="button" href="mailto:amy.dell@usc.edu">Email</a>
         </div>
       </div>
 
-      <aside class="sidebar">
-        <div class="contact-card">
-          <div class="contact-label">Email</div>
-          <a href="mailto:amy.dell@usc.edu">amy.dell@usc.edu</a>
+      <aside class="hero-side" aria-label="Contact and summary">
+        <div class="portrait" aria-hidden="true">
+          <span>AO</span>
         </div>
-        <div class="contact-card">
-          <div class="contact-label">LinkedIn</div>
-          <a href="https://www.linkedin.com/in/allison-amy-o-connell" target="_blank" rel="noreferrer">linkedin.com/in/allison-amy-o-connell</a>
-        </div>
-        <div class="contact-card">
-          <div class="contact-label">Location</div>
-          <span>Los Angeles, CA</span>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-label">Email</div>
+            <a href="mailto:amy.dell@usc.edu">amy.dell@usc.edu</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-label">LinkedIn</div>
+            <a href="https://www.linkedin.com/in/allison-amy-o-connell" target="_blank" rel="noreferrer">linkedin.com/in/allison-amy-o-connell</a>
+          </div>
+          <div class="contact-card">
+            <div class="contact-label">Location</div>
+            <span>Los Angeles, CA</span>
+          </div>
+          <div class="contact-card">
+            <div class="contact-label">Education</div>
+            <span>Ph.D., USC · B.A., Vassar College</span>
+          </div>
         </div>
       </aside>
     </section>
 
-    <!-- <section class="card section" id="news">
+    <section class="card section" id="about">
       <div class="section-heading">
-        <h2>News</h2>
+        <h2>About</h2>
       </div>
-      <ul class="compact-list">
-        <li><strong>2026:</strong> HRI Pioneers; Graduate Student Consortium, TEI.</li>
-        <li><strong>2025:</strong> CHI paper on socially assistive robots for elder care.</li>
-        <li><strong>2024:</strong> HRI paper on a robot schoolwork companion for students with ADHD.</li>
-      </ul>
-    </section> -->
+      <p class="compact-text">
+        I work at the intersection of human-robot interaction, socially assistive robotics, and accessible tools for research and education.
+        My dissertation focuses on iterative development of modular, low-cost, open-source robots for in-the-wild HRI studies.
+      </p>
+    </section>
 
     <section class="card section" id="research">
       <div class="section-heading">
         <h2>Research</h2>
       </div>
+
       <div class="grid-3">
-        <article class="mini-card">
+        <article class="mini-card" id="blossom">
           <h3>Accessible robot platforms</h3>
-          <p>Designing modular, low-cost, open-source robots that make human-robot interaction studies easier to run in the wild.</p>
+          <p>Open-source, low-cost robot platforms that make human-robot interaction studies easier to build and deploy.</p>
+          <div class="card-links">
+            <a href="https://rasc.usc.edu/robots/squash-and-stretch/blossom/" target="_blank" rel="noreferrer">Blossom project page</a>
+          </div>
         </article>
+
         <article class="mini-card" id="nih-project">
-          <h3>Personalized assistive systems</h3>
-          <p>Work on the <a href="#">NIH Smart Health project</a> on AI-driven models for supporting user engagement and adherence in health interventions.</p>
+          <h3>Personalized health interventions</h3>
+          <p>AI-driven models and user-centered studies for supporting engagement and adherence in health interventions.</p>
+          <div class="card-links">
+            <a href="https://datascience.nih.gov/sch" target="_blank" rel="noreferrer">NIH Smart Health program</a>
+          </div>
         </article>
+
         <article class="mini-card" id="arvr-project">
-          <h3>AR/VR for robot interaction</h3>
-          <p>Contributions to augmented-reality interfaces and personalized proxemics modeling, with project-page links to be added here.</p>
+          <h3>AR/VR proxemics and signaling</h3>
+          <p>Augmented-reality interfaces and robot signal design for modeling proxemics and improving human-robot interaction.</p>
+          <div class="card-links">
+            <a href="https://arxiv.org/abs/2408.03453" target="_blank" rel="noreferrer">Proxemics paper</a>
+            <a href="https://github.com/interaction-lab/NRI-SVTE" target="_blank" rel="noreferrer">Signal design repository</a>
+          </div>
         </article>
       </div>
+    </section>
+
+    <section class="card section" id="news">
+      <div class="section-heading">
+        <h2>News</h2>
+      </div>
+      <ul class="compact-list">
+        <li><strong>2026:</strong> HRI Pioneers; Graduate Student Consortium at TEI.</li>
+        <li><strong>2025:</strong> CHI paper on socially assistive robots for elder care.</li>
+        <li><strong>2024:</strong> HRI paper on a schoolwork companion for college students with ADHD.</li>
+      </ul>
     </section>
 
     <section class="card section" id="publications">
@@ -109,7 +141,7 @@
         <h3>Journal publications</h3>
         <article class="pub-item">
           <div class="pub-venue">RA-M ’25</div>
-          <p><strong>An Interactive Augmented Reality Interface for Personalized Proxemics Modeling: Comfort and Human–Robot Interactions.</strong> Massimiliano Nigro, Amy O’Connell, Thomas Groechel, Anna-Maria Velentza, and Maja J. Matarić. <em>IEEE Robotics &amp; Automation Magazine</em> 32(3), 2025, 125–133. DOI: 10.1109/MRA.2024.3415108.</p>
+          <p><strong>An Interactive Augmented Reality Interface for Personalized Proxemics Modeling: Comfort and Human–Robot Interactions.</strong> Massimiliano Nigro, Amy O’Connell, Thomas Groechel, Anna-Maria Velentza, and Maja J. Matarić. <em>IEEE Robotics &amp; Automation Magazine</em> 32, no. 3 (2025): 125–133. DOI: 10.1109/MRA.2024.3415108.</p>
         </article>
       </div>
 
@@ -146,32 +178,34 @@
       </div>
     </section>
 
-    <section class="card section" id="teaching">
-      <div class="section-heading">
-        <h2>Teaching</h2>
+    <section class="card section split" id="teaching">
+      <div>
+        <div class="section-heading">
+          <h2>Teaching</h2>
+        </div>
+        <ul class="compact-list">
+          <li><strong>USC:</strong> CSCI 103, CSCI 201.</li>
+          <li><strong>Vassar:</strong> CS 145, CS 101, CS 241.</li>
+        </ul>
       </div>
-      <ul class="compact-list">
-        <li><strong>USC:</strong> CSCI 103, CSCI 201.</li>
-        <li><strong>Vassar:</strong> CS 145, CS 101, CS 241.</li>
-      </ul>
-    </section>
 
-    <section class="card section" id="service">
-      <div class="section-heading">
-        <h2>Service</h2>
+      <div>
+        <div class="section-heading">
+          <h2>Service</h2>
+        </div>
+        <ul class="compact-list">
+          <li>Lead organizer, Women in US Academic Research in Robotics List.</li>
+          <li>Tour director, USC Interaction Lab.</li>
+          <li>Reviewer for HRI, RO-MAN, ICSR, T-HRI, Autonomous Robots, and related venues.</li>
+        </ul>
       </div>
-      <ul class="compact-list">
-        <li>Lead organizer, Women in US Academic Research in Robotics List.</li>
-        <li>Tour director, USC Interaction Lab.</li>
-        <li>Reviewer for HRI, RO-MAN, ICSR, T-HRI, Autonomous Robots, and related venues.</li>
-      </ul>
     </section>
 
     <section class="card section" id="cv">
       <div class="section-heading">
         <h2>CV</h2>
       </div>
-      <p class="cv-line">
+      <p class="compact-text">
         <a class="button primary" href="assets/Amy_OConnell_CV.pdf" target="_blank" rel="noreferrer">Download the full CV (PDF)</a>
       </p>
     </section>
